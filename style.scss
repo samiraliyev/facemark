@@ -1,0 +1,462 @@
+$color1: #f2f2f2;
+$color2: #464646;
+$color3: #c39a84;
+$color4: #6d6d6d;
+$FontF: "Fractul";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body {
+        header {
+            .logo {
+                background-color: $color1;
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+
+                .logoImg {
+                    width: 201.68px;
+                    height: 58.95px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .headerText {
+                background-color: $color2;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 6px 0;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+        main {
+            background-color: #f9f9f9;
+            padding: 50px 5%;
+            font-family: $FontF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .xeberler {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 70%;
+                .articleCard {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+
+                    .textAndImg {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 2px solid #d3d3d3;
+                        padding-bottom: 5px;
+                        width: 100%;
+                        .cardText {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+                            padding-right: 20px;
+
+                            .cardP1 {
+                                color: $color3;
+                                font-size: 16px;
+                            }
+                            .cardP2 {
+                                color: $color2;
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                            .cardP3 {
+                                color: $color4;
+                                font-size: 13px;
+                            }
+                        }
+                        .cardImg {
+                            width: 120px;
+                            height: 120px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                // object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+            .videos {
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+                margin: 20px 0;
+                .videoCard {
+                    width: 45%;
+                    .video {
+                        video {
+                            width: 100%;
+                        }
+                    }
+                    .videoText {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .videoTextP1 {
+                            font-size: 16px;
+                            color: $color3;
+                        }
+                        .videoTextP2 {
+                            font-size: 18px;
+                            color: $color2;
+                            font-weight: 700;
+                        }
+                        .videoTextP3 {
+                            font-size: 13px;
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+            .canliYayim {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                gap: 7px;
+                h2 {
+                    color: #c39a84;
+                }
+                .canliY {
+                    video {
+                        width: 100%;
+                    }
+                }
+                .musahibe {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    .musahibeA {
+                        font-size: 16px;
+                        color: $color3;
+                    }
+                    .musahibeP1 {
+                        font-size: 18px;
+                        color: $color2;
+                    }
+                    .musahibeP2 {
+                        font-size: 13px;
+                        color: $color4;
+                    }
+                }
+            }
+            .reklam1 {
+                width: 70%;
+                div {
+                    width:100%;
+                    height:200px;
+                    // background-color: #c39a84;
+                    background-image: url("images/logo.png");
+                    z-index: 1;
+                }
+            }
+        }
+        // samir
+        .container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .main-image{
+                width: 100%;
+                height: 120vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url("/images/rectangle.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        }
+        .content{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-wrap: wrap;
+            gap: 7px;
+            
+            .newsTitle{
+                width: 80%;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                padding: 10px 3px;
+                
+                h1{
+                    color: $color3;
+                    font-family: $FontF;
+                    font-weight: 300;
+                    // text-align: left;
+
+                }
+            }
+            .content-image{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .c-image{
+                    width: 100%;
+
+                }
+            }
+            .news-section{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 15px;
+                padding: 15px 0;
+                .news-category{
+                    color: #c39a84;
+                    font-family: $FontF;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                .news-title{
+                    font-size: 18px;
+                    font-family: $FontF;
+                    word-spacing: 2px;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                }
+                .news-description{
+                    font-size: 20px;
+                    font-family: $FontF;
+                    line-height: 30px;
+                }
+            }
+            .news-card{
+                width: 80%;
+                display: flex;
+                // flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .card-image{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .card-detail{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                }
+            }
+            .banner{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+            }
+            .news{
+            
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+                .subtitle{
+                font-weight: bold;
+                font-family: $FontF;
+                font-size: 24px;
+            }
+            .newsContent{
+                width: 100%;
+                row-gap: 4px;
+                word-spacing: 3px;
+                letter-spacing: 1px;
+                font-size: 22px;
+                font-weight: 400;
+                font-family: 'Fractul';
+                a{
+                    text-decoration: none;
+                }
+
+            }
+            }
+            .ticket{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 7px;
+                button{
+                    width: 170px;
+                    height: 60px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #c39a84;
+                    color: white;
+                    font-size: 24px;
+                    gap:3px;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        footer{
+            width: 100%;
+            margin-top: 50px;
+            .footerText{
+                width: 100%;
+                background-color: $color2;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 6px 0;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                text-align: center;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-family: $FontF;
+            }
+            .footer-elements{
+                width: 80%;
+                padding: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                text-align: center;
+                .footer-left{
+                   
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .social-links{
+                        width: 100%;
+                        padding: 7px 5px;
+                        gap: 25px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .contact{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15px;
+                        .mail{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 15px;
+                        }
+                        .phone{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 15px;
+                        }
+                        .detail{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            text-align: center;
+                            gap: 15px;
+                        }
+                    }
+                }
+                .footer-right{
+                    display: flex;
+                    // justify-content: center;
+                    align-items: end;
+                    flex-direction: column;
+                    .footer-logo{
+
+                    }
+                    .description{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15px;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+// Responsive codes
+@media (max-width: 576px) {
+    * {
+        body {
+            header {
+                .logo {
+                    .logoImg {
+                        width: 130px;
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .headerText {
+                    font-size: 8px;
+                }
+            }
+
+            main {
+                .xeberler {
+                    .articleCard {
+                        .textAndImg {
+                            .cardText {
+                                .cardP1 {
+                                    font-size: 10px;
+                                }
+                                .cardP2 {
+                                    font-size: 12px;
+                                }
+                                .cardP3 {
+                                    font-size: 10px;
+                                }
+                            }
+                            .cardImg {
+                                width: 200px;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
